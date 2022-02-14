@@ -1,0 +1,132 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* body {
+
+} */
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 60px;
+  border: 1px solid #888;
+  max-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: rgb(59, 100, 189);
+  line-height: 60px;
+  text-align: center;
+}
+
+nav {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 120px;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header {
+    height: 200px;
+    float: left;
+  }
+}
+
+label {
+  float: left;
+  margin-left: 10%;
+}
+
+select {
+  display: none;
+}
+
+#search {
+  float: left;
+  margin-left: 2%;
+}
+
+#logo {
+  margin: 15px auto;
+}
+
+nav a {
+  float: right;
+  padding: 0 2%;
+  color:rgb(59, 100, 189);
+  text-decoration: none;
+  font-weight: 900;
+}
+
+nav a:hover {
+  color: rgb(14, 55, 143);
+}
+
+main section {
+  float: left;
+  margin: 5% 2.5%;
+  max-width: 45%;
+}
+
+main section img {
+  float: left;
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+
+section h1 {
+  font-weight: 400;
+  font-size: 3em;
+}
+
+section h3 {
+  font-size: 1em;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2em;
+}
+
+section a {
+  float: left;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  color: white;
+  font-weight: 900;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(14, 55, 143);
+  margin: 2% 1%;
+
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

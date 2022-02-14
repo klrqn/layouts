@@ -1,0 +1,173 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: none;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: Rubik;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+sidebar {
+  float: left;
+  width: 17%;
+  height: 2000px; /* TODO: Make 100% */
+  padding: 1%;
+  /* margin: 1%; */
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+sidebar ul {
+  padding-inline-start: 1rem; 
+}
+
+sidebar ul li {
+  list-style-type: none;
+  height: 100%;
+  padding: 0.25em;
+  font-family: Rubik;
+  text-align: left;
+}
+
+ul li {
+  font-size: 0.75em;
+}
+
+.nav_links {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.extra_crunch {
+  color: rgb(214, 146, 20);
+  font-weight: 600;
+}
+
+ul li img {
+  padding-bottom: 1.5em;
+}
+
+main {
+  overflow: hidden;
+  float: right;
+  width: 83%;
+  padding: 1%;
+  height: 70vh;
+}
+
+main .main_story {
+  float: left;
+  width: 65%;
+  margin-right: 4%;
+  font-weight: 700;
+}
+
+.main_story .extra_crunch {
+  font-size: 0.75em;
+  margin: 0.25em 0 0 0;
+}
+
+.main_story h1 {
+  margin: 0.1em 0 0.25em 0;
+}
+
+.main_story p {
+  font-weight: 400;
+  color: #444;
+  margin: .5em 0;
+}
+
+.writer {
+  display: block;
+  font-size: 0.9em;
+  font-weight: 900;
+  padding-bottom: 0.5em;
+}
+
+main .side_stories {
+  float: right;
+  width: 31%
+}
+
+.main_story img{
+  width: 100%;
+}
+
+.side_stories h3 {
+  font-size: 1em;
+}
+
+.side_stories .writer {
+  font-size: 0.75em;
+  border-bottom: 1px solid #999;
+}
+
+#the_latest {
+  float: left;
+  width: 83%;
+  padding: 1em 0 0 0;
+  font-weight: 600;
+}
+
+.bottom_story {
+  float: left;
+  width: 83%;
+  color: #666;
+}
+
+.bottom_story_section h2 {
+  font-weight: 800;
+  color: black;
+}
+
+.bottom_story_section .writer {
+  color: black;
+  font-weight: 400;
+}
+
+.bottom_story_section .time {
+  color:#999
+}
+
+.bottom_story_section {
+  float: left;
+  width: 30.33%;
+  margin-right: 3%;
+}
+
+.bottom_story_section img{
+  float: left;
+  max-width: 100%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
