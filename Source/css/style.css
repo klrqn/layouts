@@ -1,0 +1,110 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  max-width: 100%;
+  font-size: 1.6rem;
+  padding: 1.7rem;
+}
+
+.btn {
+  font-size: 1.2rem;
+  background-color: rgb(6, 6, 53);
+  color: white;
+  padding: 1rem 2.4rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color:rgb(73, 73, 170);
+  background-color: rgb(0, 0, 0);
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* HEADER NAV */
+nav {
+  width: 100%;
+  background-color: lightblue;
+  height: 5rem;
+}
+
+.logo {
+  float: left;
+  height: 3rem;
+  width: 8%;
+  margin-top: 1rem;
+  margin-right: 15%;
+  margin-left: 2rem;
+  background-color: black;
+}
+
+ul {
+  
+  float: left;
+  width: 60%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+ul li {
+  float: left;
+  width: 25%;
+  margin-top: 1.6rem;
+}
+
+li a {
+  /* display: block; */
+  text-align: center;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+nav a.btn {
+  margin-top: .8rem;
+  margin-right: 2rem;
+
+  float: right;
+  width: 8%;
+  color: red;
+}
