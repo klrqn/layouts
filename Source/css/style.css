@@ -27,6 +27,12 @@ html {
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:rgb(26, 26, 36);
+}
+
+.kittyWrapper {
+  background:url(../img/main-kitty.jpeg);
+  overflow: auto;
 }
 
 
@@ -40,7 +46,7 @@ header {
 }
 
 .btn {
-  font-size: 1.2rem;
+  font-size: 1rem;
   background-color: rgb(6, 6, 53);
   color: white;
   padding: 1rem 2.4rem;
@@ -63,18 +69,20 @@ footer {
 /* HEADER NAV */
 nav {
   width: 100%;
-  background-color: lightblue;
-  height: 5rem;
+  min-height: 5rem;
+  overflow: hidden;
+  /* background-color: rgb(222, 232, 249); */
 }
 
 .logo {
   float: left;
+  font-weight: 900;
+  font-size: 2rem;
   height: 3rem;
   width: 8%;
   margin-top: 1rem;
   margin-right: 15%;
   margin-left: 2rem;
-  background-color: black;
 }
 
 ul {
@@ -98,13 +106,145 @@ li a {
   text-align: center;
   padding: 1rem 2rem;
   text-decoration: none;
+  color:rgb(26, 26, 36);
 }
 
 nav a.btn {
   margin-top: .8rem;
-  margin-right: 2rem;
-
+  margin: 1rem;
   float: right;
-  width: 8%;
-  color: red;
+  width: 6%;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* MAIN */
+main {
+  padding: 5%;
+
+}
+
+main section {
+  width: 40%;
+  margin: 0;
+  float: left;
+}
+
+
+main span {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+main h1 {
+  font-size: 5rem;
+  color:rgb(26, 26, 36);
+  width: 100%;
+  margin: 1rem 0;
+}
+
+
+form input[type="text"] {
+  position: relative;
+  font-size: 1.6rem;
+  background-color: rgb(204, 198, 198);
+  padding: .8rem;
+  border: none;
+  width: 100%;
+}
+
+form input[type="submit"] {
+  position: absolute;
+  font-size: 1.6rem;
+  color: white;
+  background-color: rgb(97, 97, 97);
+  padding: .8rem;
+  border: none;
+
+}
+
+main p {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.bigComputer {
+  width: 50%;
+  float: right;
+  height: 400px;
+  border: 3px solid #e4e9ed;
+  background:center / cover url(../img/main-kitty.jpeg);
+  padding: 1rem;
+}
+
+/* FOUR SECTIONS LAYOUT BELOW MAIN */
+
+.fourFeatures {
+  background-color: #e4e9ed;
+  /* padding: 0 8%; */
+  color:#191a1b;
+  padding-bottom: 5rem;
+  overflow: auto;
+}
+
+.feature {
+  width: 25%;
+  padding: 3%;
+  float: left;
+}
+
+.fa {
+  height: 2rem;
+  width: 2rem;
+  font-size: 2.4rem;
+  padding: 0
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.feature p {
+  line-height: 1.8;
+}
+
+.feature a {
+  font-size: 1rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: #191a1b;
+  margin: 1rem;
+}
+
+.feature a:hover {
+  background-color: #191a1b;
+  color: white;
+}
+
+/* COLLECTING INFO SECTION */
+
+.collecting {
+  padding: 2% 5%;
+}
+
+.collecting h2 {
+  font-size: 5rem;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.collecting p {
+  font-size: 1.4rem;
+  width: 45%;
+  line-height: 1.9rem;
+  color:#383b3d;
+}
+
+footer {
+  width: 80%;
+  height: 50px;
+  background-color:rgb(182, 52, 52);
+  margin: 0 auto;
 }
