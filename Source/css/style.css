@@ -67,6 +67,11 @@ footer {
 /*******************************************/
 
 /* HEADER NAV */
+
+.fa-bars {
+  display: none;
+}
+
 nav {
   width: 100%;
   min-height: 5rem;
@@ -116,6 +121,9 @@ nav a.btn {
   width: 6%;
   padding: 1rem;
   text-align: center;
+  font-weight: 900;
+  font-size: 1.4rem;
+
 }
 
 /* MAIN */
