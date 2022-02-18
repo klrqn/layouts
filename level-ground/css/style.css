@@ -1,0 +1,324 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: Helvetica, sans-serif;
+  /* font-stretch: 70%; */
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  position: relative;
+  background: rgb(99, 102, 119);
+  max-width: 100%;
+  height: 50px;
+}
+
+main {
+  color: white;
+  background: rgb(99, 102, 119);
+  max-width: 100%;
+  height: 350px;
+  margin: 0;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/*link styles*/
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* additional header styles */
+header a, header a img {
+  height: 50px;
+  line-height: 50px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-center {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  width: 10%;
+}
+
+.header-right {
+  width: 5%;
+  max-width: 30%;
+  height: 30px;
+  float: right;
+  margin-right: 10%;
+  margin-top: 1%;
+}
+
+.header-right a {
+  text-align: center;
+  line-height: 30px;
+}
+
+.header-center a img {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* main styles */
+main {
+  text-align: center;
+}
+
+main h1 {
+  margin: 0;
+  padding: 7% 2% 0 2%;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+main p {
+  font-size: 1em;
+  padding: 1.5em 5em;
+}
+
+main span {
+  display: block;
+  color: rgb(28, 29, 34);
+  font-size: 0.5em;
+  margin: 5em auto 2em;
+}
+
+/* why section */
+.why {
+  color: rgb(49, 51, 63);
+  height: 250px;
+  max-width: 100%;
+  text-align: center;
+  padding: 4% 25%;
+}
+
+.why h2 {
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+.why p {
+  margin: 0 auto;
+}
+
+/* Visit Section */
+.visit-container {
+  max-width: 100%;
+  height: 450px;
+  background:rgb(155, 160, 182);
+  color:rgb(28, 29, 34);
+}
+
+.visit-side {
+  float: left;
+  height: 100%;
+  max-width: 50%;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.visit-side .block {
+  height: 30%;
+  max-width: 50%;
+  background: rgb(99, 102, 119);
+  margin-top: 15%;
+}
+
+.left {
+  margin-right:10%;
+  margin-left:40%;
+}
+
+.right {
+  margin-left:10%;
+  margin-right:40%;
+}
+
+.visit-title {
+  padding: 0.25em;
+  text-transform: uppercase;
+}
+
+.visit-side p {
+  font-size: 0.75em;
+  margin-top: 0;
+}
+
+/* Button Styling */
+.btn {
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid red;
+  border-radius: 0.1em;
+  padding: 0.5em 2em;
+  color: #fff;
+  background-color: #555;
+  height: 2em;
+  line-height: 2em;
+}
+
+.btn-light {
+  
+  height:auto;
+  background-color: #ddd;
+  color:rgb(28, 29, 34);
+  height: 30px;
+  max-width: 10%
+}
+
+/* VOLUNTEER SECTION */
+section.volunteer {
+  height: auto;
+  max-width: 100%;
+}
+
+.volunteer h2, .volunteer p, .volunteer a {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  margin-left: 25%;
+}
+
+.volunteer h2 {
+  color:rgb(36, 39, 61);
+  max-width: 50%;
+  margin-top: 2.5rem;
+  text-transform: uppercase;
+}
+
+.volunteer p {
+  max-width: 50%;
+}
+
+.volunteer a {
+  max-width: 15%;
+  padding: 0.5rem 2rem;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  background-color: rgb(23, 26, 37);
+  color: white;
+  height: auto;
+  max-width: 100%;
+}
+
+.footer_left_info {
+  max-width: 50%;
+}
+
+.footer_left_info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  max-width: 50%;
+}
+
+.footer_left_info ul li {
+  float: left;
+}
+
+.footer_left_info ul .social_media_links a {
+  display: block;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: 1.5rem 0.75rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer h6 {
+  color:rgb(99, 102, 119);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  max-width: 50%;
+  margin: 0.5rem;
+}
+
+h6 ~ h6 {
+  margin-top: 1rem;
+}
+
+.footer_left_info ul li a {
+  color:rgb(217, 221, 243);
+  font-size: 0.75rem;
+  padding: 0.5rem;
+}
+
+.col-1-4 {
+  position: absolute;
+  max-height: 80%;
+  max-width: 20%;
+  right: 2%;
+  top: 25%;
+}
+
+.col-1-4 h4 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: rgb(217, 221, 243);
+  margin: 0;
+  padding: 0
+}
+
+.col-1-4 p {
+  color:rgb(99, 102, 119);
+  font-size: 0.75rem;
+  padding-top:0.5rem;
+  margin: 0;
+}
+
+.col-1-4 a {
+  width: 200px;
+  height: 100px;
+  background-color: green;
+}
+
