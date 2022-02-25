@@ -1,0 +1,287 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+}
+
+/* * {
+  border: 0.25px solid grey;
+} */
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* WELCOME SECTION
+/*******************************************/
+
+section.welcome { 
+  background: right / contain no-repeat url("../img/welcome_background.jfif"), linear-gradient(270deg, rgba(213,224,228,1) 30%, rgba(255,255,255,1) 100%);
+}
+nav {
+  position: relative;
+  height: auto;
+}
+
+.welcome nav ul {
+  position: relative;
+  right: 20%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+.welcome nav ul li {
+  float: right;
+}
+
+.welcome nav ul li a {
+  display: block;
+  color: #222;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 2rem;
+  text-decoration: none;
+}
+
+.welcome li a:hover {
+  background-color:#ddd;
+}
+
+.welcome_main {
+  max-width: 60%;
+  margin-left: 8%;
+}
+.welcome_main h1 {
+  font-size: 8rem;
+  font-weight: 400;
+}
+
+/* SEARCH BAR */
+.welcome_main form {
+  position: relative;
+  box-shadow:0 10px 30px rgb(180, 180, 180);
+  width: 50rem;
+  margin: 5% 0;
+  height: 3rem;
+}
+
+.welcome_main form input {
+  font-size: 1.6rem;
+  width: 40rem;
+  height: 3rem;
+  text-decoration: inherit;
+  border: 0.5px solid rgb(255, 255, 255);
+  border-radius: 4px 0 0 4px;
+  padding: 1% 3%; 
+}
+
+.welcome_main form a {
+  /* float: right; */
+  position: absolute;
+  height: inherit;
+
+
+  background-color: orange;
+  font-size: 1.6rem;
+  padding: .4rem .8rem;
+  border-radius: 0 4px 4px 0;
+  border: 0.5px solid #444;
+  text-decoration: none;
+  color: white;
+}
+
+.social_links {
+  height: auto;
+  padding-bottom: 10rem;
+}
+
+.social_links ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+.social_links ul li {
+  float: left;
+  padding-right: 3rem;
+  list-style-type: none;
+
+}
+
+.social_links ul li a {
+  display: inline-block;
+  color: #222;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0 1rem 0 0.5rem;
+  text-decoration: none;
+}
+
+.social_links ul li i{
+  font-size: 2rem;
+  color: orange;
+  padding-right: .5rem;
+}
+
+/* DISCOVER */
+
+.aboutus {
+  position: relative;
+  font-family:  'Roboto', sans-serif;
+  height: auto;
+  padding: 15rem;
+  background: -60rem repeat url(../img/FLSAiBEXoAAtS93.jfif);
+  width: 100%;
+}
+
+.aboutus .aboutus-content {
+  position: relative;
+  left: 40%;
+  max-width: 60%;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 1rem;
+
+}
+
+span{
+  font-family:  'Roboto', sans-serif;
+  font-weight: 600;
+  color: orange;
+  font-size: 2rem;
+}
+
+.aboutus h2 {
+  font-size: 7rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-family: 'DM Serif Display', serif;
+}
+
+.aboutus p {
+  font-family:  'Roboto', sans-serif;
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+
+.menu {
+  /* border: 1px solid grey; */
+  padding: .5em;
+  float: left;
+  margin-top: 1rem;  
+}
+
+.menu a, .menu span {
+  /* border: 1px solid grey; */
+  padding: .5rem;
+}
+
+.menu span {
+  border-radius: 0 .5rem .5rem 0;
+  color: white;
+  background-color: orange;
+}
+
+.menu a {
+  border-radius: .5rem 0 0 .5rem;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+}
+
+/* =========================
+Specialty Cuisine
+========================= */
+.cuisine_container {
+  background-color: #eee;
+}
+
+.title {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 10%;
+  list-style-type: none;
+  text-align: center;
+}
+
+.cuisine h2 {
+  font-size: 7rem;
+  font-weight: 100;
+  margin: .5rem 0 1.5rem 0;
+}
+
+.meal ul 
+ {
+  font-family:  'Roboto', sans-serif;
+  /* display: inline-block; */
+  list-style-type: none;
+  margin: 3rem 0;
+  padding: 0;
+}
+
+.meal ul li {
+  display: inline;
+  padding: 1rem 3rem;
+  font-size: 2.4rem;
+  border-bottom: 1px solid #777;
+  color: green;
+}
+
+.meal ul li:hover {
+  border-bottom: 3px solid orange;
+  /* color: orange !important; */
+}
+
+.meal ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.meal ul li a:hover {
+  color: orange;
+}
+
+.meal_photos {
+
+  
+}
