@@ -51,11 +51,21 @@ footer {
 /*******************************************/
 
 section.welcome { 
-  background: right / contain no-repeat url("../img/welcome_background.jfif"), linear-gradient(270deg, rgba(213,224,228,1) 30%, rgba(255,255,255,1) 100%);
+  background: url("../img/i_LFmTn6n_X3.0.jpg"), linear-gradient(270deg, rgba(213,224,228,1) 30%, rgba(255,255,255,1) 100%);
+  background-size:cover;
+  background-repeat: no-repeat;
+
+  color: white;
+  text-shadow: 3px 3px 1px #222;
 }
 nav {
   position: relative;
   height: auto;
+}
+
+.welcome h1 {
+  text-shadow: 2px 3px 1px #111;
+
 }
 
 .welcome nav ul {
@@ -65,24 +75,27 @@ nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-
 }
 
 .welcome nav ul li {
   float: right;
+  margin: 3px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .welcome nav ul li a {
   display: block;
-  color: #222;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px #222;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.6rem;  
   padding: 2rem;
   text-decoration: none;
 }
 
 .welcome li a:hover {
-  background-color:#ddd;
+  background-color:rgb(0, 0, 0);
+  border-radius: 10px;
 }
 
 .welcome_main {
@@ -97,7 +110,7 @@ nav {
 /* SEARCH BAR */
 .welcome_main form {
   position: relative;
-  box-shadow:0 10px 30px rgb(180, 180, 180);
+  box-shadow:0 10px 30px rgba(0, 0, 0, 0.4);
   width: 50rem;
   margin: 5% 0;
   height: 3rem;
@@ -125,7 +138,8 @@ nav {
   border-radius: 0 4px 4px 0;
   border: 0.5px solid #444;
   text-decoration: none;
-  color: white;
+  color: #111;
+  text-shadow: none;
 }
 
 .social_links {
@@ -149,7 +163,7 @@ nav {
 
 .social_links ul li a {
   display: inline-block;
-  color: #222;
+  color: #fff;
   text-align: center;
   font-size: 2rem;
   padding: 0 1rem 0 0.5rem;
@@ -158,26 +172,30 @@ nav {
 
 .social_links ul li i{
   font-size: 2rem;
-  color: orange;
+  color: rgb(255, 166, 0);
   padding-right: .5rem;
 }
-
-/* DISCOVER */
+/* ======================== */
+/* DISCOVER  ABOUT US  */
+/* ======================== */
 
 .aboutus {
+  margin-top: 2px;
   position: relative;
   font-family:  'Roboto', sans-serif;
   height: auto;
   padding: 15rem;
-  background: -60rem repeat url(../img/FLSAiBEXoAAtS93.jfif);
-  width: 100%;
+  color: white;
+  text-shadow: 1px 1px 1px #222;
+  background: no-repeat url(../img/oaxacan_sunset);
+  background-size: cover;
 }
 
 .aboutus .aboutus-content {
   position: relative;
   left: 40%;
   max-width: 60%;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 2rem;
   padding: 1rem;
 
